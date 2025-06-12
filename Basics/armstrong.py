@@ -4,4 +4,7 @@ n=input()
 l,s=len(n),0
 for i in n:
     s=s+int(i)**l
-print(s)
+if int(n)==s:
+    print("Armstrong Number!")
+else:
+    print("Not an armstrong Number!")
