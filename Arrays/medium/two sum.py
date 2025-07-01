@@ -1,14 +1,13 @@
-def two_sum(arr, target):
-    num_map = {}
-    for i, num in enumerate(arr):
-        complement = target - num
-        if complement in num_map:
-            return "YES", [num_map[complement] + 1, i + 1]  # 1-based index
-        num_map[num] = i
-    return "NO", []
-arr = [2, 6, 5, 8, 11]
-target = 14
-res, indices = two_sum(arr, target)
-print("Result:", res)
-if res == "YES":
-    print("Indices:", indices)
+#Two Sum : Check if a pair with given sum exists in Array
+n=int(input())
+ar=list(map(int, input().split()))
+target=int(input())
+a=[]
+tar={}
+for i in range(n):
+    c=target-ar[i]
+    if c in tar:
+        a=[tar[c],i]
+        break
+    tar[ar[i]]=i
+print(a)
