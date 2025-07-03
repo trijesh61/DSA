@@ -24,4 +24,7 @@ def merge_two_sorted_lists(left,right,arr):
         arr[k]=left[i]
         i+=1
         k+=1
-    
+    while j<len(right):
+        arr[k]=right[j]
+        j+=1
+        k+=1
