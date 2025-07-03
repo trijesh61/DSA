@@ -28,3 +28,8 @@ def merge_two_sorted_lists(left,right,arr):
         arr[k]=right[j]
         j+=1
         k+=1
+
+if __name__==__main__:
+    arr=list(map(int,input().split()))
+    merge_sort(arr)
+    print("Sorted array:",arr)
