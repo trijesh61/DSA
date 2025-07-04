@@ -11,3 +11,9 @@ def recursive_insertion_sort(arr,n):
 
     arr[j + 1] = last
 
+arr = list(map(int, input().split()))
+n = len(arr)
+
+recursive_insertion_sort(arr, n)
+
+print("Sorted array:", *arr)
