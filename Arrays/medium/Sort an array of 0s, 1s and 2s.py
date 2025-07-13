@@ -14,4 +14,9 @@ def sort_array(arr):
             mid+=1
         else:
             arr[mid],arr[high]=arr[high],arr[mid]
-            
+            high-=1
+
+
+n=list(map(int,input().split()))
+sort_array(n)
+print(n)
