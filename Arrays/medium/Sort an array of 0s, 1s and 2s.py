@@ -13,4 +13,5 @@ def sort_array(arr):
         elif arr[mid]==1:
             mid+=1
         else:
+            arr[mid],arr[high]=arr[high],arr[mid]
             
