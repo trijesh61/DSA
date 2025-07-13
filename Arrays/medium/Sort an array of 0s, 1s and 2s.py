@@ -2,11 +2,15 @@
 #Write a program to in-place sort the array without using inbuilt sort functions.
 #( Expected: Single pass-O(N) and constant space)
 
-n=int(input())
-ar=list(map(int, input().split()))
-z,o,t=ar.count(0),ar.count(1),ar.count(2)
-ar=[]
-ar+=[0]*z
-ar+=[1]*o
-ar+=[2]*t
-print(ar)
+def sort_array(arr):
+    n=len(arr)
+    low,mid,high=0,0,n-1
+    while mid<=high:
+        if arr[mid]==0:
+            arr[mid],arr[low]=arr[low],arr[mid]
+            low+=1
+            mid+=1
+        elif arr[mid]==1:
+            mid+=1
+        else:
+            
