@@ -3,17 +3,16 @@
 #Return the maximum profit you can achieve from this transaction.
 #If you cannot achieve any profit, return 0.
 
-def buy_sell_stock(arr):
-    mi=min(arr)
-    m=float("inf")
-    for i in range(len(arr)):
-        ma=max(arr[i:])
-        if ma>mi and mi in arr[i:]:
-            m=min(ma-mi,m)
+def buy_sell_stock(prices):
+    min_price = float('inf')
+    max_profit = 0
 
+    for price in prices:
+        min_price = min(min_price, price) 
+        profit = price - min_price         
+        max_profit = max(max_profit, profit)
 
-    return m
-
+    return max_profit
 
 
 
