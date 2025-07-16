@@ -15,10 +15,6 @@ def buy_sell_stock(prices):
     return max_profit
 
 
-
-
-
-
 arr=list(map(int,input().split()))
 m=buy_sell_stock(arr)
 print(m)
