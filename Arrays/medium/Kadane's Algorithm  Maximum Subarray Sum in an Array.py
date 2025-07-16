@@ -5,20 +5,13 @@
 # which has the largest sum and returns its sum and prints the subarray.
 
 def max_subarray_sum(arr):
-    max_sum = curr_sum = arr[0]
-    start = end = s = 0  # Track indices for subarray
-
-    for i in range(1, len(arr)):
-        if curr_sum + arr[i] < arr[i]:
-            curr_sum = arr[i]
-            s = i  # Start new subarray
-        else:
-            curr_sum += arr[i]
-
-        if curr_sum > max_sum:
-            max_sum = curr_sum
-            start = s
-            end = i
-
-    print("Maximum Subarray:", arr[start:end+1])
+    max_sum=arr[0]
+    current_sum=arr[0]
+    for i in range(1,len(arr)):
+        current_sum=max(arr[i],current_sum+arr[i])
+        max_sum=max(current_sum,max_sum)
     return max_sum
+
+arr=list(map(int,input().split()))
+sum=max_subarray_sum(arr)
+print(sum)
