@@ -10,6 +10,15 @@ for i in l:
         p.append(i)
     else:
         n.append(i)
+no=len(l)
 
-for i in range(len(l)):
-    
+neg,pos=0,0
+for i in range(no):
+    if i%2==0:
+        l[i]=p[pos]
+        pos+=1
+    else:
+        l[i]=n[neg]
+        neg+=1
+
+print(l)
