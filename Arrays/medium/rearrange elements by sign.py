@@ -11,3 +11,5 @@ for i in l:
     else:
         n.append(i)
 
+for i in range(len(l)):
+    
