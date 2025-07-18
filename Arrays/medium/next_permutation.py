@@ -26,3 +26,4 @@ print(nextPermutation(arr))  # Output: [2, 1, 3]
 
 arr = [3, 2, 1]
 print(nextPermutation(arr))  # Output: [1, 2, 3]
+ 
