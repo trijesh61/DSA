@@ -15,3 +15,4 @@ def longet_consecutive_numbers_length(arr):
 
 arr=list(map(int,input().split()))
 l=longet_consecutive_numbers_length(arr)
+print(l)
