@@ -14,4 +14,4 @@ def longet_consecutive_numbers_length(arr):
     return longest
 
 arr=list(map(int,input().split()))
-longet_consecutive_numbers_length(arr)
+l=longet_consecutive_numbers_length(arr)
