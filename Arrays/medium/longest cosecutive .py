@@ -21,8 +21,6 @@ def longest_consecutive_numbers_length(arr):
     return longest
 
 
-
-
 arr = list(map(int, input().split()))
 l = longest_consecutive_numbers_length(arr)
 print(l)
