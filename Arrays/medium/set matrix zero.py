@@ -2,14 +2,12 @@
 #  then return the matrix.
 
 matrix=[[1,1,1],[1,0,1],[1,1,1]]
-j,k=[],[]
-for i in range(len(matrix)):
-    if 0 in matrix[i]:
-        j.append(i)
-        k.append(matrix.index(matrix[i]))
 
-for i in range(len(k)):
-    matrix[j[i],:]=0
-    matrix[:,k[i]]=0
+r,c=set(),set()
+rows=len(matrix)
+cols=len(matrix[0])
 
-print(matrix)
+for i in range(rows):
+    for j in range(cols):
+        if matrix[i][j]==0:
+            
