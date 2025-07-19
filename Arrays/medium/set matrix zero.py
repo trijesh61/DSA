@@ -20,3 +20,5 @@ for i in r:
 for i in range(rows):
     for j in c:
         matrix[i][j]=0
+
+print(matrix)
