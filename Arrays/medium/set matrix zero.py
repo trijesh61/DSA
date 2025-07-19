@@ -13,3 +13,9 @@ for i in range(rows):
             r.add(i)
             c.add(j)
 
+for i in r:
+    for j in range(cols):
+        matrix[i][j]=0
+
+for i in range(rows):
+    
