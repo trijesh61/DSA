@@ -18,4 +18,5 @@ for i in r:
         matrix[i][j]=0
 
 for i in range(rows):
-    
+    for j in c:
+        matrix[i][j]=0
