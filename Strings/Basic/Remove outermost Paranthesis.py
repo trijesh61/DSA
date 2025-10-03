@@ -8,6 +8,6 @@ def removeOuterParentheses(S):
         opened += 1 if c == '(' else -1
     return "".join(res)
 
-# Example usage
+# Example usage 
 S = "(()())(())"
 print(removeOuterParentheses(S))  # Output: "()()()"
