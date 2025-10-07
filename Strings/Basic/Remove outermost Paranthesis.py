@@ -11,3 +11,7 @@ def removeOuterParentheses(S):
 # Example usage
 S = "(()())(())"
 print(removeOuterParentheses(S))  # Output: "()()()"
+
+
+
+
