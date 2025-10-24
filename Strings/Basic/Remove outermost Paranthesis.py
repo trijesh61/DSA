@@ -10,4 +10,4 @@ def removeOuterParentheses(S):
 
 
 S = input()   #sample input: "(()())(())"
-print(removeOuterParentheses(S))  #sample Output: "()()()"
+print(removeOuterParentheses(S))  #sample input's Output: "()()()"
