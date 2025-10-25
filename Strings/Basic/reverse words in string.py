@@ -2,6 +2,7 @@
 
 s=list(input().split())
 s1=""
+
 n=len(s)
 for i in range(n-1,-1,-1):
     if i==n-1:
