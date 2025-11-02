@@ -8,3 +8,4 @@ if int(n)==s:
     print("Armstrong Number!")
 else:
     print("Not an armstrong Number!")
+    
