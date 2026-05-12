@@ -7,3 +7,6 @@ while mid>i:
     l[i],l[n-i-1]=l[n-i-1],l[i]
     i+=1
 print(f"Reversed Array: {l}")
+
+
+
